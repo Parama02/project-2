@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,500&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-primary:#FA8BFF;
+    --clr-secondary:#2BD2FF;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    background-color: var(--clr-primary);
+    background-image: linear-gradient(45deg, var(--clr-primary) 0%, var(--clr-secondary) 52%, #2BFF88 90%);
+
+    color: #1c2024;
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    width: 80%;
+    max-width: 24rem;
+    height: auto;
+    padding: 3rem 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 4px 4px 16px rgba(0,0,0,0.45);
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.details .title{
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.7;
+}
+
+.details .scores{
+    font-size: 1.25rem;
+}
+
+.details .scores span{
+    font-weight:900;
+}
+
+.weapons{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.weapons button{
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #fff;
+    background-color: var(--clr-primary);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.result{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem auto;
+}
+
+.result p{
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
