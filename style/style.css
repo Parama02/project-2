@@ -49,18 +49,20 @@ body{
 
 .details .title{
     text-align: left;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: 900;
     text-transform: uppercase;
     line-height: 1.7;
 }
 
 .details .scores{
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+
 }
 
 .details .scores span{
     font-weight:900;
+    color:#FA8BFF;
 }
 
 .weapons{
@@ -95,4 +97,8 @@ body{
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+.result p:last-child {
+    color:#d723e0;
 }

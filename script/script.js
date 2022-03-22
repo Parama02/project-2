@@ -10,11 +10,11 @@ let compScores = 0;
 
 const showResult = function (result){
 	
-	document.getElementById('user-choice').textContent='User Choice: ${userChoice}';
+	document.getElementById('user-choice').textContent=`User Choice: ${userChoice}`;
 
-	document.getElementById('comp-choice').textContent='Computer Choice: ${compChoice}';
+	document.getElementById('comp-choice').textContent=`Computer Choice: ${compChoice}`;
 
-	document.getElementById('result').textContent='${result}';
+	document.getElementById('result').textContent=`${result}`;
 
 };
 
