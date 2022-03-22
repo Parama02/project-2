@@ -5,10 +5,17 @@ const weapons=['rock','paper','scissor'];
 let userChoice;
 let compChoice;
 
-const showResult = function(result){
-	console.log('User Choice: ${userChoice}');
-	console.log('Computer Choice: ${compChoice}');
-	console.log('Result: ${result}');
+let userScores = 0;
+let compScores = 0;
+
+const showResult = function (result){
+	
+	document.getElementById('user-choice').textContent='User Choice: ${userChoice}';
+
+	document.getElementById('comp-choice').textContent='Computer Choice: ${compChoice}';
+
+	document.getElementById('result').textContent='${result}';
+
 };
 
 
@@ -22,32 +29,32 @@ const game = function(input){
 			showResult('Game Draw');
 		}else if(compChoice === 'paper'){
 			showResult('You Lose');
-			compScore++;
+			compScores++;
 		}else if(compChoice === 'scissor'){
 			showResult('You Won');
-			userScore++;
+			userScores++;
 		}
 	}else if(userChoice === 'paper'){
 		if(compChoice === 'rock'){
 			showResult('You Won');
-			userScore++;
+			userScores++;
 		}else if(compChoice === 'paper'){
 			showResult('Game Draw');
 		}else if(compChoice === 'scissor'){
 			showResult('You Lose');
-			compScore++;
+			compScores++;
 		}
 	}else if(userChoice === 'scissor'){
 		if(compChoice === 'rock'){
 			showResult('You Lose');
-			compScore++;
+			compScores++;
 		}else if(compChoice === 'paper'){
 			showResult('You Won');
-			userScore++;
+			userScores++;
 		}else if(compChoice === 'scissor'){
 			showResult('Game Draw');
 		}
 	}
-    document.getElementById('user-score').textContent=userScore;
-	document.getElementById('comp-score').textContent=compScore;
+    document.getElementById('user-scores').textContent=userScores;
+	document.getElementById('comp-scores').textContent=compScores;
 };
